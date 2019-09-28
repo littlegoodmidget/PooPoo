@@ -7,6 +7,13 @@
     <title>PooPoo</title>
 </head>
 <body>
-    <nav></nav>
+    <canvas id='canvas'></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const c = canvas.getContext('2d');
+
+        c.arc(0, 0, 100, 0, Math.PI*2, false);
+        c.fill();
+    </script>
 </body>
 </html>
